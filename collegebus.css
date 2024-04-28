@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #d66b6b, #e80707);
+}
+
+#booking-form {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#route-suggestions {
+    list-style-type: none;
+    padding: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    position: absolute;
+    width: 300px;
+    max-height: 200px;
+    overflow-y: auto;
+    display: none; /* Hide suggestions box by default */
+}
+
+#route-suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+#route-suggestions li:hover {
+    background-color: #f6f6f6;
+}
+
+#ticket-details {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    display: none; /* Hide ticket details by default */
+}
+#pay-bill {width: 300px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    display: none;
+    /* Add your existing styles for the pay bill button */
+    display: none; /* Initially hide the pay bill button */
+}

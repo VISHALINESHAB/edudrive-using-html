@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    height: 100vh;
+    margin: solid black 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 24px;
+    
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.result-box {
+    position: absolute;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-top: none;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.9);
+    top: 40px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.result-box ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.result-box ul li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.result-box ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.info {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.info.visible {
+    display: block;}
+
+/* Add this rule to style the Back button */
+/* Add this rule to style the Back button */
+.back-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+/* Add this rule to darken the button on hover */
+.back-button:hover {
+    background-color: #0056b3;
+}
+
